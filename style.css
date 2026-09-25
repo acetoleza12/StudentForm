@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+}
+
+/* CONTAINER */
+.container {
+    width: 420px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 12px;
+
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* INPUT */
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+/* INPUT FOCUS */
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52,152,219,0.4);
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+    background-color: #3498db;
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* CLICK */
+button:active {
+    transform: scale(0.95);
+}
+
+/* PREVIEW */
+.preview {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.4s ease;
+}
+
+/* SHOW ANIMATION */
+.preview.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* FADE IN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
